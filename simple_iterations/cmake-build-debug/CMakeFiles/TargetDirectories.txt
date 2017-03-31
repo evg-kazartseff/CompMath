@@ -1,0 +1,3 @@
+/home/evgenii/git/CompMath/simple_iterations/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/evgenii/git/CompMath/simple_iterations/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/evgenii/git/CompMath/simple_iterations/cmake-build-debug/CMakeFiles/simple_iterations.dir

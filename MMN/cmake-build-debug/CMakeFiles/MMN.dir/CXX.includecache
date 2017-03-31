@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/evgenii/git/CompMath/MMN/Gays.cpp
+Gays.h
+/home/evgenii/git/CompMath/MMN/Gays.h
+
+/home/evgenii/git/CompMath/MMN/Gays.h
+cmath
+-
+vector
+-
+
+/home/evgenii/git/CompMath/MMN/MMN.cpp
+MMN.h
+/home/evgenii/git/CompMath/MMN/MMN.h
+
+/home/evgenii/git/CompMath/MMN/MMN.h
+vector
+-
+cmath
+-
+
+/home/evgenii/git/CompMath/MMN/main.cpp
+iostream
+-
+cmath
+-
+iomanip
+-
+MMN.h
+/home/evgenii/git/CompMath/MMN/MMN.h
+Gays.h
+/home/evgenii/git/CompMath/MMN/Gays.h
+

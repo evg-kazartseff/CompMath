@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/evgenii/git/CompMath/interpolation/interpolation.cpp
+interpolation.h
+/home/evgenii/git/CompMath/interpolation/interpolation.h
+
+/home/evgenii/git/CompMath/interpolation/interpolation.h
+cmath
+-
+vector
+-
+
+/home/evgenii/git/CompMath/interpolation/main.cpp
+iostream
+-
+GL/glut.h
+-
+

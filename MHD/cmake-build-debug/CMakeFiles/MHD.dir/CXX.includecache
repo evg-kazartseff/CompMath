@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/evgenii/git/CompMath/MHD/MHD.cpp
+iomanip
+-
+MHD.h
+/home/evgenii/git/CompMath/MHD/MHD.h
+
+/home/evgenii/git/CompMath/MHD/MHD.h
+cmath
+-
+fstream
+-
+iostream
+-
+
+/home/evgenii/git/CompMath/MHD/main.cpp
+MHD.h
+/home/evgenii/git/CompMath/MHD/MHD.h
+

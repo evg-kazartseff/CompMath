@@ -1,43 +1,19 @@
-#include <iostream>
-#include <fstream>
-#include <cmath>
+//
+// Created by evgenii on 28.03.17.
+//
 
-#define accuracy 0.000000000000001
+#include "Gays.h"
 
-#define mod 1
-
-using namespace std;
-
-int main() {
-    ifstream input;
-    input.open("../matrix.txt", ios_base::in);
-    int n;
-    input >> n;
+int gays(vector<vector<double>> matrix, vector<double> B, vector<double> &R, int n) {
     double mass[n][n + 1];
     double res[n];
-    for (int i = 0; i < n; ++i) {
-        res[i] = 0;
-    }
 
     for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n + 1; ++j) {
-            if (!input.eof()) {
-                input >> mass[i][j];
-            }
-            else {
-                cout << "Incorect Matrix!!" << endl;
-                return 1;
-            }
+        for (int j = 0; j < n; ++j) {
+            mass[i][j] = matrix[i][j];
         }
+        mass[i][n] = B[i];
     }
-
-    for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n + 1; ++j) {
-            cout << mass[i][j] << " ";
-        }
-        cout << endl;
-    }
-    cout << endl;
 
     for(int k = 0; k < n - 1; k++) {
 #ifdef mod
@@ -66,7 +42,6 @@ int main() {
                 //поиск строки замены
                 for (j = k + 1; j < n || mass[k][j] == 0; j++);
                 if (j == n) {
-                    cout << "Система несовместна" << endl;
                     return 3;
                 }
                 //обмен строк
@@ -75,14 +50,6 @@ int main() {
                     mass[j][l] = mass[k][l];
                     mass[k][l] = tmp;
                 }
-                // вывод
-                for (int m = 0; m < n; ++m) {
-                    for (int p = 0; p < n + 1; ++p) {
-                        cout << mass[m][p] << " ";
-                    }
-                    cout << endl;
-                }
-                cout << endl;
             }
             double koef = mass[i][k] / mass[k][k];
             for (int j = k; j <= n; j++) {
@@ -107,7 +74,6 @@ int main() {
                 }
             }
             if (col == n + 1) {
-                cout << "Система несовместна" << endl;
                 return 4;
             }
         }
@@ -125,20 +91,8 @@ int main() {
             res[i] = 0;
         }
     }
-
-
     for (int i = 0; i < n; ++i) {
-        for (int j = 0; j < n + 1; ++j) {
-            cout << mass[i][j] << " ";
-        }
-        cout << endl;
+        R[i] = res[i];
     }
-
-    cout << endl;
-
-    for (int i = 0; i < n; ++i) {
-        cout << res[i] << ' ';
-    }
-    cout << endl;
     return 0;
 }

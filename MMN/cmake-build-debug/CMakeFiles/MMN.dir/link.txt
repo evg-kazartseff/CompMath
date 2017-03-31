@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/MMN.dir/main.cpp.o CMakeFiles/MMN.dir/MMN.cpp.o CMakeFiles/MMN.dir/Gays.cpp.o  -o MMN 

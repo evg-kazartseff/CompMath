@@ -1,0 +1,3 @@
+/home/evgenii/git/CompMath/gays/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/evgenii/git/CompMath/gays/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/evgenii/git/CompMath/gays/cmake-build-debug/CMakeFiles/gays.dir

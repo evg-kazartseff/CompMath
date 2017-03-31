@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/MHD.dir/main.cpp.o CMakeFiles/MHD.dir/MHD.cpp.o  -o MHD -lm 

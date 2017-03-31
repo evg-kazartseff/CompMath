@@ -1,0 +1,1 @@
+/usr/bin/c++   -g   CMakeFiles/interpolation.dir/main.cpp.o CMakeFiles/interpolation.dir/interpolation.cpp.o  -o interpolation -lGL -lGLU -lX11 -lglut 
